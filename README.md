@@ -1,8 +1,8 @@
-# Brownie Points
+# KleoNetwork
 
 [![Chrome](https://img.shields.io/chrome-web-store/v/klnaejjgbibmhlephnhpmaofohgkpgkd)](https://chrome.google.com/webstore/detail/zilpay/klnaejjgbibmhlephnhpmaofohgkpgkd?utm_source=chrome-ntp-icon)
 
-Brownie Points allows you to earn brownie points by visiting web3 based marketplaces. It also allows websites to understand your user behaviour better while you earn these brownie cookies. We use zero knowledge proofs to share this information with the user.
+KleoNetwork allows you to earn brownie points by visiting web3 based marketplaces. It also allows websites to understand your user behaviour better while you earn these brownie cookies. We use zero knowledge proofs to share this information with the user.
 
 <p align="center">
   <a href="https://kleo.network"><img src="https://github.com/lich666dead/zil-pay/blob/master/imgs/preview.png"></a>
