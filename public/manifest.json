@@ -1,0 +1,56 @@
+{
+  "name": "Kleo Network",
+  "author": "https://kleo.network",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "128": "icons/icon128.png",
+    "512": "icons/icon512.png"
+  },
+  "storage": {
+    "managed_schema": "schema.json"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "chromeos": "Alt+Shift+Z",
+        "linux": "Alt+Shift+Z",
+        "mac": "Alt+Shift+Z",
+        "windows": "Alt+Shift+Z"
+      }
+    }
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "activeTab",
+    "alarms",
+    "https://api.zilliqa.com/",
+    "https://dev-api.zilliqa.com/",
+    "http://127.0.0.1/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": ["inpage.js", "phishing.html"],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_title": "Kleo Network",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "version": "1.3.4",
+  "short_name": "Kleo Extension",
+  "description": "Kleo browser Extension"
+}
